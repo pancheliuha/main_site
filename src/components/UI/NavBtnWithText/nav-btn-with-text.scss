@@ -1,0 +1,58 @@
+.test-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  padding: 0 30px;
+  min-width: 246px;
+  width: 100%;
+  height: 92px;
+  border-radius: 50px;
+  outline: none;
+  cursor: pointer;
+  transition: all .2s;
+  text-decoration: none;
+  &.without-arrow {
+    .test-btn__text {
+      margin-right: 0;
+    }
+    .arrow-right {
+      display: none;
+    }
+  }
+
+  &.kitcia {
+    min-width: 207px;
+    width: 207px;
+    margin: 0 18px;
+    height: 92px;
+  }
+}
+
+.test-btn:hover .arrow-right {
+  transform: rotateZ(45deg) translate(4px, -4px);
+  transition: all .2s;
+}
+
+
+
+.test-btn__text {
+  font-family: "Helvetica-Roman", sans-serif;
+  line-height: 33px;
+  letter-spacing: 2px;
+  font-size: 25px;
+  margin-right: 10px;
+}
+
+.arrow-right {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 7px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotateZ(45deg) translate(0);
+  transition: all .2s;
+}

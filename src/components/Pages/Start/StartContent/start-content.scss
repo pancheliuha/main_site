@@ -1,0 +1,35 @@
+.start {
+    background-image: -moz-linear-gradient( -48deg, rgb(234,123,41) 0%, rgb(249,107,51) 14%, rgb(254,56,107) 85%, rgb(228,40,124) 100%);
+    background-image: -webkit-linear-gradient( -48deg, rgb(234,123,41) 0%, rgb(249,107,51) 14%, rgb(254,56,107) 85%, rgb(228,40,124) 100%);
+    background-image: -ms-linear-gradient( -48deg, rgb(234,123,41) 0%, rgb(249,107,51) 14%, rgb(254,56,107) 85%, rgb(228,40,124) 100%);
+
+    &-inner {
+        padding-left: 55px;
+        padding-right: 46px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    &-logo {
+        position: absolute;
+        right: 0;
+        top: 20px;
+    }
+
+    &-text {
+        max-width: 620px;
+    }
+
+    &-btns-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+}

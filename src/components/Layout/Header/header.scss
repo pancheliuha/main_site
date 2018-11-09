@@ -1,0 +1,14 @@
+.header {
+  height: 110px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.header-logo {
+  position: absolute;
+  left: 55px;
+  top: 25px;
+}

@@ -1,0 +1,35 @@
+.nav-button {
+  width: 92px;
+  height: 92px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  transition: all .2s ease-out;
+  
+
+  &.prev {
+    &:hover {
+      transform: translate(-10px);
+      transition: all .2s ease-out;
+    }
+  }
+
+  &.next {
+    &:hover {
+      transform: translate(10px);
+      transition: all .2s ease-out;
+    }
+  }
+
+  &.smaller {
+    width: 70px;
+    height: 70px;
+  }
+
+  &-icon {
+    width: 100%;
+  }
+}

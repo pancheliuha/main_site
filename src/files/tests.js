@@ -1,0 +1,68 @@
+const tests = [
+    {
+        id: 2,
+        number: '02',
+        text: 'Яка стать людини, <br /> про яку Ви турбуєтесь?',
+        trueBtnText: 'Чоловік',
+        falseBtnText: 'Жінка',
+        inverseBtns: false,
+    },
+    {
+        id: 3,
+        number: '03',
+        text: ' Чи палить ця людина? ',
+        trueBtnText: 'Так',
+        falseBtnText: 'Ні',
+        inverseBtns: false,
+    },
+    {
+        id: 4,
+        number: '04',
+        text: ' Чи вживає ця людина  алкоголь?',
+        trueBtnText: 'Так',
+        falseBtnText: 'Ні',
+        inverseBtns: false,
+    },
+    {
+        id: 5,
+        number: '05',
+        text: ' Чи має ця людина надмірну вагу (індекс маси тіла 25 чи більше)',
+        trueBtnText: 'Так',
+        falseBtnText: 'Ні',
+        inverseBtns: false,
+    },
+    {
+        id: 6,
+        number: '06',
+        text: ' Чи ця людина регулярно займається спортом?',
+        trueBtnText: 'Ні',
+        falseBtnText: 'Так',
+        inverseBtns: true,
+    },
+    {
+        id: 7,
+        number: '07',
+        text: ' Чи дотримується вона здорового харчування?',
+        trueBtnText: 'Ні',
+        falseBtnText: 'Так',
+        inverseBtns: true,
+    },
+    {
+        id: 8,
+        number: '08',
+        text: ' Чи ця людина хворіє на цукровий діабет? ',
+        trueBtnText: 'Так',
+        falseBtnText: 'Ні',
+        inverseBtns: false,
+    },
+    {
+        id: 9,
+        number: '09',
+        text: ' Вона має підвищений артеріальний тиск (140 мм рт.ст. чи вище)? ',
+        trueBtnText: 'Так',
+        falseBtnText: 'Ні',
+        inverseBtns: false,
+    },
+];
+
+export default tests;
