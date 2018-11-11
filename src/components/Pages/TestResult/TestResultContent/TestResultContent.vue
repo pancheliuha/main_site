@@ -53,7 +53,7 @@
 <script>
     import NavBtnWithText from '../../../UI/NavBtnWithText/NavBtnWithText'
     import TestResultTooltip01 from './TestResultTooltips/TestResultTooltip01'
-    import { testForLovedOneUrl, testForYourselfUrl } from '../../../../../config.js'
+    import { testForLovedOneUrl, testForYourselfUrl } from '../../../../config.js'
 
     export default {
         name: 'MythsContent',

@@ -1,4 +1,4 @@
-import { testForLovedOneUrl } from '../../../../config.js'
+import { testForLovedOneUrl } from '../../../config.js'
 
 export const menu = [
     {
