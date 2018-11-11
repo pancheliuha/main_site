@@ -8,6 +8,7 @@
                     class="nav-sub-menu-item">
                 <router-link
                         :to="submenuItem.activeLink"
+                        @click.native="closeMobileMenu"
                         class="nav-sub-menu-link">
                         <span>{{ submenuItem.text }}</span>
                     <transition name="fadeHeight" mode="out-in">
@@ -25,7 +26,6 @@
 </template>
 
 <script>
-    import Vue from 'vue'
 
     export default {
         name: 'NavSubMenu',
@@ -33,6 +33,12 @@
         data() {
             return {
 
+            }
+        },
+        methods: {
+            closeMobileMenu() {
+                this.$root.$emit('toggle-menu', false)
+                this.$root.$emit('close-mobile-menu', false)
             }
         },
         mounted() {

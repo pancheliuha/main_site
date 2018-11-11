@@ -1,3 +1,6 @@
+@import "../../../assets/scss/mixins";
+
+
 .header {
   height: 110px;
   background-color: #fff;
@@ -5,10 +8,46 @@
   align-items: center;
   justify-content: flex-end;
   position: relative;
+  @include desktop() {
+    height: 88px;
+  }
+  @include tablets() {
+    height: 120px;
+    justify-content: space-between;
+    padding: 10px 20px;
+  }
+  @include phones() {
+    height: 90px;
+    padding: 10px 15px;
+  }
+
+  .nav-list {
+    @include tablets() {
+      display: none;
+    }
+  }
 }
 
 .header-logo {
   position: absolute;
   left: 55px;
   top: 25px;
+  @include desktop() {
+    width: 230px;
+  }
+
+  @include tablets() {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 142px;
+    z-index: 6;
+  }
+  @include phones() {
+    width: 97px;
+  }
+
+  img {
+    max-width: 100%;
+  }
 }

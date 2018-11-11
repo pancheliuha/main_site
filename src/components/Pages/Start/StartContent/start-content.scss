@@ -1,8 +1,10 @@
+@import "../../../../assets/scss/mixins";
 .start {
-    background-image: -moz-linear-gradient( -48deg, rgb(234,123,41) 0%, rgb(249,107,51) 14%, rgb(254,56,107) 85%, rgb(228,40,124) 100%);
-    background-image: -webkit-linear-gradient( -48deg, rgb(234,123,41) 0%, rgb(249,107,51) 14%, rgb(254,56,107) 85%, rgb(228,40,124) 100%);
-    background-image: -ms-linear-gradient( -48deg, rgb(234,123,41) 0%, rgb(249,107,51) 14%, rgb(254,56,107) 85%, rgb(228,40,124) 100%);
-    background-image: linear-gradient( -48deg, rgb(234,123,41) 0%, rgb(249,107,51) 14%, rgb(254,56,107) 85%, rgb(228,40,124) 100%);
+    background-image: -moz-linear-gradient(-48deg, rgb(234, 123, 41) 0%, rgb(249, 107, 51) 14%, rgb(254, 56, 107) 85%, rgb(228, 40, 124) 100%);
+    background-image: -webkit-linear-gradient(-48deg, rgb(234, 123, 41) 0%, rgb(249, 107, 51) 14%, rgb(254, 56, 107) 85%, rgb(228, 40, 124) 100%);
+    background-image: -ms-linear-gradient(-48deg, rgb(234, 123, 41) 0%, rgb(249, 107, 51) 14%, rgb(254, 56, 107) 85%, rgb(228, 40, 124) 100%);
+    background-image: linear-gradient(-48deg, rgb(234, 123, 41) 0%, rgb(249, 107, 51) 14%, rgb(254, 56, 107) 85%, rgb(228, 40, 124) 100%);
+    position: relative;
 
     &-inner {
         padding-left: 55px;
@@ -14,16 +16,42 @@
         position: relative;
         width: 100%;
         height: 100%;
+        @include tablets() {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 
     &-logo {
         position: absolute;
         right: 0;
         top: 20px;
+        @include desktop() {
+            width: 300px;
+        }
+        @include tablets() {
+            position: relative;
+            width: auto;
+            margin: auto;
+            order: 1;
+        }
+        @include phones() {
+            width: 75%;
+            margin-top: 0;
+        }
     }
 
     &-text {
         max-width: 620px;
+        @include desktop() {
+            max-width: 520px;
+        }
+        @include tablets() {
+            margin-left: 50px;
+        }
+        @include phones() {
+            margin-left: 33px;
+        }
     }
 
     &-btns-wrapper {
@@ -31,6 +59,269 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        @include tablets() {
+            order: 2;
+        }
+    }
+
+    .text-with-arrow {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            left: -60px;
+            top: 10px;
+            border-top: 3px solid #fff;
+            border-right: 3px solid #fff;
+            transform: rotateZ(45deg);
+            width: 24px;
+            height: 24px;
+            @include phones() {
+                left: -44px;
+                top: 0;
+                border-top: 2px solid #fff;
+                border-right: 2px solid #fff;
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    .step-01-img-wrapper {
+        position: absolute;
+        bottom: 0;
+        left: -33%;
+        height: 100%;
+        @include tablets() {
+            display: none;
+        }
+
+        img {
+            height: 110%;
+            position: absolute;
+            bottom: 0;
+            pointer-events: none;
+        }
+    }
+
+    .pfizer-logo-white {
+        display: none;
+        @include tablets() {
+            display: inline-block;
+            position: absolute;
+            top: 40%;
+            right: 0;
+        }
+        @include phones() {
+            width: 60px;
+        }
+    }
+
+    .step-1 {
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding-top: 160px;
+        padding-left: 55px;
+        padding-right: 46px;
+        @include tablets() {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-top: 10px;
+            align-items: flex-start;
+        }
+        @include phones() {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .content-btns-wrapper {
+            left: 0;
+            padding-left: 55px;
+            padding-right: 46px;
+            @include tablets() {
+                padding-left: 0;
+                padding-right: 0;
+                position: absolute;
+            }
+        }
+
+        .content-description-text-wrapper {
+            align-items: flex-start;
+        }
+
+        .content-description {
+            justify-content: flex-end;
+            width: auto;
+            @include tablets() {
+                margin-left: 47px;
+            }
+            @include phones() {
+                margin-top: 36px;
+                margin-left: 0;
+            }
+        }
+
+        .mobile-img-wrapper {
+            display: none;
+            @include tablets() {
+                display: block;
+                position: absolute;
+                bottom: -16px;
+                left: 50%;
+                transform: translate(-50%);
+            }
+            @include phones() {
+                width: 100%;
+                pointer-events: none;
+                bottom: -19px;
+            }
+
+            img {
+                @include phones() {
+                    max-width: 100%;
+                }
+            }
+        }
+
+        .content-btns-wrapper {
+            justify-content: flex-end;
+            @include phones() {
+                z-index: 1;
+            }
+        }
+
+        .start-text {
+            font-family: "Helvetica-Light", sans-serif;
+            font-size: 40px;
+            color: #fff;
+            margin-bottom: 40px;
+            margin-top: 0;
+            @include desktop() {
+                max-width: 470px;
+                font-size: 33px;
+            }
+            @include phones() {
+                font-size: 20px;
+                margin-bottom: 14px;
+            }
+        }
+    }
+
+    .step-2 {
+        align-items: flex-end;
+        justify-content: center;
+        padding-left: 55px;
+        padding-right: 46px;
+        @include tablets() {
+            align-items: flex-start;
+            justify-content: flex-start;
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .content-btns-wrapper {
+            left: 0;
+            padding-left: 55px;
+            padding-right: 46px;
+            @include tablets() {
+                padding-left: 0;
+                padding-right: 0;
+                position: absolute;
+            }
+        }
+
+        .content-description-text-wrapper {
+            align-items: flex-end;
+            @include tablets() {
+                align-items: flex-start;
+                padding-left: 55px;
+            }
+            @include phones() {
+                padding-left: 30px;
+            }
+        }
+
+        .content-description {
+            @include phones() {
+                margin-top: 0;
+                width: 100%;
+            }
+        }
+
+        .text-with-arrow {
+            &::before {
+                top: 38%;
+            }
+        }
+
+        .start-text-big {
+            @include desktop() {
+                width: 380px;
+            }
+            @include phones() {
+                width: auto;
+            }
+            &-number {
+                font-size: 196px;
+                color: #fff;
+                font-family: "Helvetica-Bold", sans-serif;
+                @include desktop() {
+                    font-size: 130px;
+                }
+            }
+
+            &-star {
+                font-size: 112px;
+                font-family: "Helvetica-Light", sans-serif;
+                position: absolute;
+                line-height: 1;
+                top: 20px;
+                @include desktop() {
+                    font-size: 90px;
+                }
+            }
+
+            &-percent {
+                font-size: 138px;
+                font-family: "Helvetica-Light", sans-serif;
+                @include desktop() {
+                    font-size: 65px;
+                }
+            }
+        }
+
+
+
+        .start-text-medium {
+            max-width: 380px;
+            font-family: "Helvetica-Light", sans-serif;
+            font-size: 40px;
+            color: #fff;
+            margin-top: -10px;
+            @include desktop() {
+                font-size: 33px;
+            }
+            @include phones() {
+                font-size: 21px;
+            }
+        }
+
+        .mobile-img-wrapper {
+            display: none;
+            @include tablets() {
+                display: block;
+                margin-left: -17px;
+            }
+            @include phones() {
+                width: 100%;
+            }
+
+            img {
+                @include phones() {
+                    max-width: 100%;
+                }
+            }
+        }
     }
 
 }

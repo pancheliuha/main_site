@@ -15,7 +15,7 @@
                     <div class="content-description">
                         <div class="content-description-text-wrapper">
                             <p class="content-description-text medium uppercase">
-                                Перші ознаки інсульту*
+                                Перші ознаки інсульту<InsultTooltip01 tooltip-id="insult_01"></InsultTooltip01>
                             </p>
                         </div>
                     </div>
@@ -27,11 +27,13 @@
 
 <script>
     import NavButton from '../../../UI/NavButton/NavButton'
+    import InsultTooltip01 from './InsultTooltips/InsultTooltip01'
 
     export default {
         name: 'DiseaseAlertContent',
         components: {
-            NavButton
+            NavButton,
+            InsultTooltip01
         },
         methods: {
             goToFirstAid() {

@@ -1,9 +1,16 @@
+@import "./assets/scss/mixins";
+
 #app {
   font-family: Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100%;
   height: 100%;
+  background-color: #f3f3f3;
+  @include tablets() {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @font-face {
@@ -168,7 +175,6 @@ html, body {
 
 .content-wrapper {
   width: 100%;
-  height: 100%;
 }
 
 .main-content {

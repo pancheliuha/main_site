@@ -7,7 +7,7 @@
                     leave-active-class="opacity-in">
                 <div class="step-wrapper step-1" v-show="step === 1">
                     <div class="step-img-wrapper">
-                        <img src="../../../../assets/img/SSZ_3/step_301.png" alt="step-01">
+                        <img class="round-image" src="../../../../assets/img/SSZ_3/step_301.png" alt="step-01">
                     </div>
                     <div class="content-description">
                         <div class="content-description-text-wrapper">
@@ -33,17 +33,17 @@
                     leave-active-class="opacity-in">
                 <div class="step-wrapper step-2" v-show="step === 2">
                     <div class="step-img-wrapper">
-                        <img src="../../../../assets/img/SSZ_3/step_302.png" alt="step-02">
+                        <img class="round-image" src="../../../../assets/img/SSZ_3/step_302.png" alt="step-02">
                     </div>
                     <div class="content-description">
                         <div class="content-description-text-wrapper">
                             <p class="content-description-text">
                                 <b>ФАКТ</b>: серцево-судинні захворювання –<br />
-                                причина 67% летальних випадків в Україні*
+                                причина 67% летальних випадків в Україні<MythsTooltip01></MythsTooltip01>
                             </p>
                         </div>
                     </div>
-                    <div class="group-btns-wrapper">
+                    <div class="group-btns-wrapper jcc-mob">
                         <NavBtnWithText :btn="true" :btnClickHandler="() => goToStep(3)">
                             Далі
                         </NavBtnWithText>
@@ -56,7 +56,7 @@
                     leave-active-class="opacity-in">
                 <div class="step-wrapper step-3" v-show="step === 3">
                     <div class="step-img-wrapper">
-                        <img src="../../../../assets/img/SSZ_3/step_303.png" alt="step-03">
+                        <img class="round-image" src="../../../../assets/img/SSZ_3/step_303.png" alt="step-03">
                     </div>
                     <div class="content-description">
                         <div class="content-description-text-wrapper">
@@ -87,14 +87,14 @@
                     <div class="content-description">
                         <div class="content-description-text-wrapper">
                             <p class="content-description-text">
-                                <b>ФАКТ</b>: навіть у молоді та людей середнього віку можуть <br />
-                                розвинути серцеві проблеми – особливо зараз, коли ожиріння, <br />
-                                діабет 2 типу та інші фактори ризику стають все більш <br />
-                                поширеними у молодому віці*
+                                <b>ФАКТ</b>: навіть у молоді та людей середнього віку можуть <br class="hidden-sm" />
+                                розвинути серцеві проблеми – особливо зараз, коли ожиріння, <br class="hidden-lg" />
+                                діабет 2 типу та інші фактори ризику стають все більш <br class="hidden-lg" />
+                                поширеними у молодому віці<MythsTooltip02 tooltip-id="myths_02"></MythsTooltip02>
                             </p>
                         </div>
                     </div>
-                    <div class="group-btns-wrapper">
+                    <div class="group-btns-wrapper jcc-mob">
                         <NavBtnWithText :btn="true" :btnClickHandler="() => goToStep(5)">
                             Далі
                         </NavBtnWithText>
@@ -107,13 +107,10 @@
                     leave-active-class="opacity-in">
                 <div class="step-wrapper step-5" v-show="step === 5">
                     <div class="step-img-wrapper">
-                        <img src="../../../../assets/img/SSZ_3/step_305.png" alt="step-05">
+                        <img class="round-image" src="../../../../assets/img/SSZ_3/step_305.png" alt="step-05">
                     </div>
                     <div class="content-description">
                         <div class="content-description-text-wrapper">
-                            <!--<p class="content-description-text big">-->
-                            <!--ішемічна хвороба серця-->
-                            <!--</p>-->
                             <p class="content-description-text">
                                 Якщо ти займаєшся <br />
                                 спортом, ти у безпеці
@@ -141,13 +138,13 @@
                     <div class="content-description">
                         <div class="content-description-text-wrapper">
                             <p class="content-description-text">
-                                Активний спосіб життя — не єдина запорука хорошого здоров’я.<br />
-                                Профілактика серцево-судинних захворювань<br />
-                                потребує цілого комплексу дій.*
+                                Активний спосіб життя — не єдина запорука хорошого здоров’я.<br class="hidden-lg" />
+                                Профілактика серцево-судинних захворювань<br class="hidden-xs" />
+                                потребує цілого комплексу дій.<MythsTooltip03 tooltip-id="myths_03"></MythsTooltip03>
                             </p>
                         </div>
                     </div>
-                    <div class="group-btns-wrapper">
+                    <div class="group-btns-wrapper jcc-mob">
                         <NavBtnWithText :btn="true" :btnClickHandler="() => goToStep(7)">
                             Далі
                         </NavBtnWithText>
@@ -160,13 +157,10 @@
                     leave-active-class="opacity-in">
                 <div class="step-wrapper step-7" v-show="step === 7">
                     <div class="step-img-wrapper">
-                        <img src="../../../../assets/img/SSZ_3/step_307.png" alt="step-07">
+                        <img class="round-image" src="../../../../assets/img/SSZ_3/step_307.png" alt="step-07">
                     </div>
                     <div class="content-description">
                         <div class="content-description-text-wrapper">
-                            <!--<p class="content-description-text big">-->
-                            <!--ішемічна хвороба серця-->
-                            <!--</p>-->
                             <p class="content-description-text">
                                 Артеріальний тиск можна не міряти,<br />
                                 якщо відчуваєш себе добре
@@ -199,11 +193,11 @@
                                 артеріального тиску дозволяє вчасно виявити проблему,
                                 почати лікування та уникнути розвитку таких ускладнень,
                                 як: інфаркт, інсульт, пошкодження нирок, очей
-                                та інших серйозних захворювань*
+                                та інших серйозних захворювань<MythsTooltip02 tooltip-id="myths_04"></MythsTooltip02>
                             </p>
                         </div>
                     </div>
-                    <div class="group-btns-wrapper">
+                    <div class="group-btns-wrapper jcc-mob">
                         <NavBtnWithText :btn="true" :btnClickHandler="() => goToStep(9)">
                             Далі
                         </NavBtnWithText>
@@ -216,12 +210,12 @@
                     leave-active-class="opacity-in">
                 <div class="step-wrapper step-9" v-show="step === 9">
                     <div class="step-img-wrapper">
-                        <img src="../../../../assets/img/SSZ_3/step_309.png" alt="step-09">
+                        <img class="round-image" src="../../../../assets/img/SSZ_3/step_309.png" alt="step-09">
                     </div>
                     <div class="content-description">
                         <div class="content-description-text-wrapper">
                             <p class="content-description-text">
-                                Якщо у родині у всіх проблеми із серцем, <br />
+                                Якщо у родині у всіх проблеми із серцем, <br class="hidden-xs" />
                                 то їх вже не уникнути
                             </p>
                         </div>
@@ -249,11 +243,11 @@
                         <div class="content-description-text-wrapper">
                             <p class="content-description-text">
                                 <b>ФАКТ</b>: сімейна історія серцевих захворювань – не вирок.
-                                Щоб зберегти серце здоровим, людям з сімейною історієюдостатньо мінімізувати інші фактори ризику*
+                                Щоб зберегти серце здоровим, людям з сімейною історієюдостатньо мінімізувати інші фактори ризику<MythsTooltip02 tooltip-id="myths_05"></MythsTooltip02>
                             </p>
                         </div>
                     </div>
-                    <div class="group-btns-wrapper">
+                    <div class="group-btns-wrapper jcc-mob">
                         <NavBtnWithText :btn="true" :btnClickHandler="() => goToStep(11)">
                             Далі
                         </NavBtnWithText>
@@ -267,7 +261,7 @@
                     leave-active-class="opacity-in">
                 <div class="step-wrapper step-11" v-show="step === 11">
                     <div class="step-img-wrapper">
-                        <img src="../../../../assets/img/SSZ_3/step_311.png" alt="step-11">
+                        <img class="round-image" src="../../../../assets/img/SSZ_3/step_311.png" alt="step-11">
                     </div>
                     <div class="content-description">
                         <div class="content-description-text-wrapper">
@@ -300,11 +294,11 @@
                             <p class="content-description-text">
                                 <b>ФАКТ</b>: кардіологи рекомендують перевіряти рівень холестерину
                                 кожні 5 років, починаючи з 20 років, і навіть раніше, якщо у родині
-                                були випадки серцево-судинних захворювань*
+                                були випадки серцево-судинних захворювань<MythsTooltip02 tooltip-id="myths_06"></MythsTooltip02>
                             </p>
                         </div>
                     </div>
-                    <div class="group-btns-wrapper">
+                    <div class="group-btns-wrapper jcc-mob">
                         <NavBtnWithText :btn="true" :btnClickHandler="() => goToStep(13)">
                             Далі
                         </NavBtnWithText>
@@ -317,7 +311,7 @@
                     leave-active-class="opacity-in">
                 <div class="step-wrapper step-13" v-show="step === 13">
                     <div class="step-img-wrapper">
-                        <img src="../../../../assets/img/SSZ_3/step_313.png" alt="step-13">
+                        <img class="round-image" src="../../../../assets/img/SSZ_3/step_313.png" alt="step-13">
                     </div>
                     <div class="content-description">
                         <div class="content-description-text-wrapper">
@@ -350,11 +344,11 @@
                                 <b>ФАКТ</b>: біль в ногах при ходьбі можуть бути ознакою
                                 захворювання периферичних артерій — стану, коли в артеріях
                                 ніг утворюються холестеринові бляшки. У людей з таким 
-                                захворюванням ризик інфаркту міокарду або інсульту збільшується*
+                                захворюванням ризик інфаркту міокарду або інсульту збільшується<MythsTooltip02 tooltip-id="myths_07"></MythsTooltip02>
                             </p>
                         </div>
                     </div>
-                    <div class="group-btns-wrapper">
+                    <div class="group-btns-wrapper jcc-mob">
                         <NavBtnWithText :btn="true" :btnClickHandler="() => goToStep(15)">
                             Далі
                         </NavBtnWithText>
@@ -368,7 +362,7 @@
                     leave-active-class="opacity-in">
                 <div class="step-wrapper step-15" v-show="step === 15">
                     <div class="step-img-wrapper">
-                        <img src="../../../../assets/img/SSZ_3/step_315.png" alt="step-15">
+                        <img class="round-image" src="../../../../assets/img/SSZ_3/step_315.png" alt="step-15">
                     </div>
                     <div class="content-description">
                         <div class="content-description-text-wrapper">
@@ -402,11 +396,11 @@
                                 <b>ФАКТ</b>: біль в ногах при ходьбі можуть бути ознакою
                                 захворювання периферичних артерій — стану, коли в артеріях
                                 ніг утворюються холестеринові бляшки. У людей з таким 
-                                захворюванням ризик інфаркту міокарду або інсульту збільшується*
+                                захворюванням ризик інфаркту міокарду або інсульту збільшується<MythsTooltip02 tooltip-id="myths_08"></MythsTooltip02>
                             </p>
                         </div>
                     </div>
-                    <div class="group-btns-wrapper">
+                    <div class="group-btns-wrapper jcc-mob">
                         <NavBtnWithText :btn="true" :btnClickHandler="goToRisks">
                             Далі
                         </NavBtnWithText>
@@ -420,6 +414,9 @@
 
 <script>
     import NavBtnWithText from '../../../UI/NavBtnWithText/NavBtnWithText'
+    import MythsTooltip01 from './MythsTooltips/MythsTooltip01'
+    import MythsTooltip02 from './MythsTooltips/MythsTooltip02'
+    import MythsTooltip03 from './MythsTooltips/MythsTooltip03'
 
     export default {
         name: 'MythsContent',
@@ -429,7 +426,10 @@
             }
         },
         components: {
-            NavBtnWithText
+            NavBtnWithText,
+            MythsTooltip01,
+            MythsTooltip02,
+            MythsTooltip03,
         },
         methods: {
             goToStep(step) {

@@ -17,7 +17,7 @@
                             <p class="content-description-text">
                                 Зупиніться та перепочиньте. <br />
                                 Розкажіть тому, хто поруч з вами <br />
-                                про свої симптоми*
+                                про свої симптоми<FirstAidTooltip01></FirstAidTooltip01>
                             </p>
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                             <p class="content-description-text">
                                 Якщо симптоми не проходять протягом 15 хвилин
                                 і ви вважаєте, що почався серцевий напад,
-                                викликайте швидку допомогу (103)*
+                                викликайте швидку допомогу (103)<FirstAidTooltip02></FirstAidTooltip02>
                             </p>
                         </div>
                     </div>
@@ -75,6 +75,8 @@
 
 <script>
     import NavButton from '../../../UI/NavButton/NavButton'
+    import FirstAidTooltip01 from './FirstAidTooltips/FirstAidTooltip01'
+    import FirstAidTooltip02 from './FirstAidTooltips/FirstAidTooltip02'
 
     export default {
         name: 'FirstAidContent',
@@ -84,7 +86,9 @@
             }
         },
         components: {
-            NavButton
+            NavButton,
+            FirstAidTooltip01,
+            FirstAidTooltip02,
         },
         methods: {
             goToStep(step) {

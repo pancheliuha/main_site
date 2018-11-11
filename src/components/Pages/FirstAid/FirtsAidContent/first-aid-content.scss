@@ -1,6 +1,19 @@
+@import "../../../../assets/scss/mixins";
+
 .first-aid-content {
     background-image: -moz-linear-gradient( -48deg, rgb(246,148,32) 0%, rgb(249,107,51) 37%, rgb(236,51,216) 76%, rgb(140,18,218) 100%);
     background-image: -webkit-linear-gradient( -48deg, rgb(246,148,32) 0%, rgb(249,107,51) 37%, rgb(236,51,216) 76%, rgb(140,18,218) 100%);
     background-image: -ms-linear-gradient( -48deg, rgb(246,148,32) 0%, rgb(249,107,51) 37%, rgb(236,51,216) 76%, rgb(140,18,218) 100%);
     background-image: linear-gradient( -48deg, rgb(246,148,32) 0%, rgb(249,107,51) 37%, rgb(236,51,216) 76%, rgb(140,18,218) 100%);
+
+    .step-img-wrapper {
+        img {
+            @include desktop() {
+                max-height: 393px;
+            }
+            @include phones() {
+                max-height: 285px;
+            }
+        }
+    }
 }

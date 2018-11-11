@@ -15,7 +15,7 @@
                     <div class="content-description">
                         <div class="content-description-text-wrapper">
                             <p class="content-description-text medium uppercase">
-                                Перші ознаки* серцевого нападу**
+                                Перші ознаки<HeartAttackTooltip01></HeartAttackTooltip01> серцевого нападу<HeartAttackTooltip02></HeartAttackTooltip02>
                             </p>
                         </div>
                     </div>
@@ -26,12 +26,16 @@
 </template>
 
 <script>
-    import NavButton from '../../../UI/NavButton/NavButton'
+    import NavButton from '../../../UI/NavButton/NavButton';
+    import HeartAttackTooltip01 from './HeartAttackTooltips/HeartAttackTooltip01'
+    import HeartAttackTooltip02 from './HeartAttackTooltips/HeartAttackTooltip02'
 
     export default {
         name: 'DiseaseAlertContent',
         components: {
-            NavButton
+            NavButton,
+            HeartAttackTooltip01,
+            HeartAttackTooltip02,
         },
         methods: {
             goToReduceRisks() {

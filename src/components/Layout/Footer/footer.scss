@@ -1,0 +1,58 @@
+@import "../../../assets/scss/mixins";
+
+.footer {
+  min-height: 110px;
+  background-color: #f3f3f3;
+  display: flex;
+  padding: 0 55px;
+  @include tablets() {
+    flex-grow: 1;
+    padding: 0 20px;
+    min-height: 200px;
+  }
+  @include phones() {
+    padding: 0 15px;
+    min-height: 236px;
+  }
+}
+
+.footer-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 15px;
+  @include tablets() {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .footer-text {
+    color: #515151;
+    font-family: "Helvetica-Light", sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    margin: 0;
+    @include phones() {
+      font-size: 12px;
+    }
+
+    a {
+      color: #78cedd;
+    }
+  }
+
+  .footer-inner-right {
+    max-width: 570px;
+  }
+
+  .footer-inner-left {
+    max-width: 340px;
+    @include tablets() {
+      max-width: 550px;
+      margin-bottom: 20px;
+    }
+  }
+}

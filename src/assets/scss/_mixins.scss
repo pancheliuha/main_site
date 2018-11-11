@@ -1,5 +1,11 @@
 @mixin desktop() {
-    @media only screen and (max-width: 1400px) {
+    @media only screen and (max-width: 1440px) {
+        @content
+    }
+}
+
+@mixin laptop-max() {
+    @media only screen and (max-width: 1199px) {
         @content
     }
 }

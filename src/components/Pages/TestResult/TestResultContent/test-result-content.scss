@@ -1,0 +1,66 @@
+@import "../../../../assets/scss/mixins";
+
+.test-result-success {
+    background-image: -moz-linear-gradient( -48deg, rgb(2,231,18) 0%, rgb(0,180,144) 49%, rgb(2,131,197) 100%);
+    background-image: -webkit-linear-gradient( -48deg, rgb(2,231,18) 0%, rgb(0,180,144) 49%, rgb(2,131,197) 100%);
+    background-image: -ms-linear-gradient( -48deg, rgb(2,231,18) 0%, rgb(0,180,144) 49%, rgb(2,131,197) 100%);
+    background-image: linear-gradient( -48deg, rgb(2,231,18) 0%, rgb(0,180,144) 49%, rgb(2,131,197) 100%);
+}
+
+.test-result-danger {
+  background-image: -moz-linear-gradient( -48deg, rgb(254,138,2) 0%, rgb(234,6,32) 49%, rgb(220,0,135) 100%);
+  background-image: -webkit-linear-gradient( -48deg, rgb(254,138,2) 0%, rgb(234,6,32) 49%, rgb(220,0,135) 100%);
+  background-image: -ms-linear-gradient( -48deg, rgb(254,138,2) 0%, rgb(234,6,32) 49%, rgb(220,0,135) 100%);
+  background-image: linear-gradient( -48deg, rgb(254,138,2) 0%, rgb(234,6,32) 49%, rgb(220,0,135) 100%);
+}
+
+.test-result-content {
+
+  .step-img-wrapper {
+    @include phones() {
+      align-items: flex-end;
+    }
+    img {
+      @include phones() {
+        max-width: 63%;
+      }
+    }
+  }
+
+  .content-description-text {
+    margin-bottom: 30px;
+    @include phones() {
+      margin-bottom: 0;
+    }
+    &.big {
+      margin-bottom: 20px;
+      font-family: "Helvetica-Roman", sans-serif;
+      letter-spacing: 3px;
+      @include phones() {
+        margin-bottom: 0;
+      }
+    }
+
+    span {
+      font-family: "Helvetica-Medium", sans-serif;
+      font-size: 32px;
+      @include phones() {
+        font-size: 21px;
+      }
+    }
+  }
+
+  .test-result-btn {
+    margin: 0 15px;
+    @include phones() {
+      margin-bottom: 20px;
+    }
+  }
+
+  .group-btns-wrapper {
+    @include phones() {
+      flex-direction: column;
+    }
+  }
+
+}

@@ -19,6 +19,7 @@ import InsultContent from '../components/Pages/DiseaseAlert/InsultContent/Insult
 import FirstAidAside from '../components/Pages/FirstAid/FirstAidAside/FIrstAidAside'
 import FirstAidContent from '../components/Pages/FirstAid/FirtsAidContent/FirstAidContent'
 
+import TestResult from '../components/Pages/TestResult/TestResultContent/TestResultContent'
 
 Vue.use(Router);
 
@@ -86,6 +87,13 @@ export default new Router({
           components: {
               aside: FirstAidAside,
               mainContent: FirstAidContent
+          }
+      },
+      {
+          path: '/test-result',
+          name: 'TestResult',
+          components: {
+              mainContent: TestResult
           }
       }
   ],

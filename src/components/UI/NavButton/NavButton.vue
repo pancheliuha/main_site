@@ -3,16 +3,16 @@
             class="nav-button"
             :class="{prev, next, smaller}"
             @click="navHandler">
-        <img
-                v-if="prev"
-                class="nav-button-icon"
-                src="../../../assets/img/icons/button-prev.png"
-                alt="prev">
-        <img
-                v-if="next"
-                class="nav-button-icon"
-                src="../../../assets/img/icons/button-next.png"
-                alt="next">
+        <!--<img-->
+                <!--v-if="prev"-->
+                <!--class="nav-button-icon"-->
+                <!--src="../../../assets/img/icons/button-prev.png"-->
+                <!--alt="prev">-->
+        <!--<img-->
+                <!--v-if="next"-->
+                <!--class="nav-button-icon"-->
+                <!--src="../../../assets/img/icons/button-next.png"-->
+                <!--alt="next">-->
     </button>
 </template>
 

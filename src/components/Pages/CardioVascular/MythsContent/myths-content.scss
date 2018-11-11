@@ -1,3 +1,5 @@
+@import "../../../../assets/scss/mixins";
+
 .myths-content {
   background-image: -moz-linear-gradient( 51deg, rgb(60,188,241) 0%, rgb(207,128,226) 45%, rgb(230,135,146) 69%, rgb(253,141,66) 100%);
   background-image: -webkit-linear-gradient( 51deg, rgb(60,188,241) 0%, rgb(207,128,226) 45%, rgb(230,135,146) 69%, rgb(253,141,66) 100%);
@@ -10,5 +12,139 @@
 
   .step-img-wrapper {
     align-items: flex-end;
+    @include tablets() {
+      align-items: center;
+    }
+    @include phones() {
+      align-items: flex-end;
+    }
   }
+
+  .round-image {
+    @include desktop() {
+      max-width: 37%;
+    }
+    @include tablets() {
+      max-width: 50%;
+    }
+    @include phones() {
+      max-width: 77%;
+    }
+  }
+
+  .step-4 {
+    .step-img-wrapper {
+      img {
+        @include desktop() {
+          max-width: 76%;
+        }
+        @include phones() {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+  .step-6 {
+    .step-img-wrapper {
+      img {
+        @include desktop() {
+          max-width: 45%;
+        }
+        @include tablets() {
+          max-width: 56%;
+        }
+        @include phones() {
+          max-width: 70%;
+        }
+      }
+    }
+  }
+
+  .step-8 {
+    .step-img-wrapper {
+      img {
+        @include desktop() {
+          max-width: 27%;
+        }
+        @include tablets() {
+          max-width: none;
+        }
+        @include phones() {
+          max-width: 58%;
+        }
+      }
+    }
+  }
+
+  .step-10 {
+    .step-img-wrapper {
+      img {
+        @include desktop() {
+          max-width: 27%;
+        }
+        @include tablets() {
+          max-width: none;
+        }
+        @include phones() {
+          max-width: 58%;
+        }
+      }
+    }
+  }
+
+  .step-12 {
+    .step-img-wrapper {
+      img {
+        @include desktop() {
+          max-width: 45%;
+        }
+        @include tablets() {
+          max-width: none;
+        }
+        @include phones() {
+          max-width: 90%;
+        }
+      }
+    }
+  }
+
+  .step-14 {
+    .step-img-wrapper {
+      img {
+        @include desktop() {
+          max-width: 21%;
+        }
+        @include tablets() {
+          max-width: none;
+        }
+        @include phones() {
+          max-width: 45%;
+        }
+      }
+    }
+  }
+
+  .step-16 {
+    .step-img-wrapper {
+      img {
+        @include desktop() {
+          max-width: 31%;
+        }
+        @include tablets() {
+          max-width: none;
+        }
+        @include phones() {
+          max-width: 75%;
+        }
+      }
+    }
+  }
+
+  .jcc-mob {
+    @include tablets() {
+      justify-content: center;
+    }
+  }
+
 }

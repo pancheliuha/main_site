@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <NavMobileMenu></NavMobileMenu>
     <div class="content-wrapper">
       <AppHeader></AppHeader>
       <main class="main-content">
@@ -28,6 +29,7 @@
     import AppFooter from './components/Layout/Footer/Footer';
     import AppAside from './components/Layout/Aside/Aside';
     import AppContent from './components/Layout/Content/Content';
+    import NavMobileMenu from './components/UI/NavMobileMenu/NavMobileMenu'
 
 export default {
   name: 'App',
@@ -35,7 +37,8 @@ export default {
         AppHeader,
         AppFooter,
         AppAside,
-        AppContent
+        AppContent,
+        NavMobileMenu
     }
 }
 </script>

@@ -1,36 +1,113 @@
-.tooltip {
-  display: block !important;
-  z-index: 10000;
+@import "../../../assets/scss/mixins";
+$popper-background-color: #e75752;
 
-  .tooltip-inner {
-    background: black;
-    color: white;
-    border-radius: 16px;
-    padding: 5px 10px 4px;
+.tooltip-wrapper {
+  display: inline-block;
+}
+
+
+.tooltip-content {
+  display: flex;
+}
+
+.toopltip-content-star {
+  margin-left: 15px;
+}
+
+
+.toopltip-content-text {
+  margin: 0;
+  margin-left: 10px;
+  color: #fff;
+
+  a {
+    color: #fff;
   }
 
+  p {
+    margin: 0;
+  }
+}
+
+.vue-tooltip {
+  background-color: $popper-background-color;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  font-family: "Helvetica-Light", sans-serif;
+  color: #fff;
+  border-radius: 8px;
+  // min-width: 120px;
+  max-width: 420px;
+  padding: 6px 10px;
+  padding-right: 25px;
+  z-index: 100;
+  box-shadow: none;
+  min-height: 50px;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  @include phones() {
+    max-width: calc(100vw - 50px);
+    font-size: 11px;
+  }
+
+  &.vue-tooltip-hidden {
+    transform: translateX(-100000px) !important;
+  }
+
+  .vue-tooltip-content {
+    text-align: center;
+  }
+
+  // .popper-close {
+  //  position: absolute;
+  //  top: 2px;
+  //  right: 4px;
+  //  color: black;
+  //  background: transparent;
+  //  border: none;
+
+  //  &:active,
+  //  &:focus {
+  //      outline: none;
+  //  }
+  // }
+
   .tooltip-arrow {
+    content: '';
     width: 0;
     height: 0;
     border-style: solid;
     position: absolute;
     margin: 5px;
-    border-color: black;
-    z-index: 1;
   }
 
   &[x-placement^="top"] {
     margin-bottom: 5px;
 
     .tooltip-arrow {
-      border-width: 5px 5px 0 5px;
+      border-width: 35px 11px 0 11px;
+      border-top-color: #fff;
+      border-bottom-color: transparent !important;
       border-left-color: transparent !important;
       border-right-color: transparent !important;
-      border-bottom-color: transparent !important;
-      bottom: -5px;
-      left: calc(50% - 5px);
+      bottom: -35px;
       margin-top: 0;
       margin-bottom: 0;
+
+      &::after {
+        content: '';
+        border-style: solid;
+        border-width: 33px 9px 0 9px;
+        border-top-color: $popper-background-color;
+        border-bottom-color: transparent !important;
+        border-left-color: transparent !important;
+        border-right-color: transparent !important;
+        display: inline-block;
+        position: absolute;
+        left: -9px;
+        top: -35px;
+      }
     }
   }
 
@@ -39,11 +116,11 @@
 
     .tooltip-arrow {
       border-width: 0 5px 5px 5px;
+      border-bottom-color: $popper-background-color;
+      border-top-color: transparent !important;
       border-left-color: transparent !important;
       border-right-color: transparent !important;
-      border-top-color: transparent !important;
       top: -5px;
-      left: calc(50% - 5px);
       margin-top: 0;
       margin-bottom: 0;
     }
@@ -54,11 +131,11 @@
 
     .tooltip-arrow {
       border-width: 5px 5px 5px 0;
-      border-left-color: transparent !important;
+      border-right-color: $popper-background-color;
       border-top-color: transparent !important;
+      border-left-color: transparent !important;
       border-bottom-color: transparent !important;
       left: -5px;
-      top: calc(50% - 5px);
       margin-left: 0;
       margin-right: 0;
     }
@@ -69,41 +146,13 @@
 
     .tooltip-arrow {
       border-width: 5px 0 5px 5px;
+      border-left-color: $popper-background-color;
       border-top-color: transparent !important;
       border-right-color: transparent !important;
       border-bottom-color: transparent !important;
       right: -5px;
-      top: calc(50% - 5px);
       margin-left: 0;
       margin-right: 0;
     }
-  }
-
-  &.popover {
-    $color: #f9f9f9;
-
-    .popover-inner {
-      background: $color;
-      color: black;
-      padding: 24px;
-      border-radius: 5px;
-      box-shadow: 0 5px 30px rgba(black, .1);
-    }
-
-    .popover-arrow {
-      border-color: $color;
-    }
-  }
-
-  &[aria-hidden='true'] {
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity .15s, visibility .15s;
-  }
-
-  &[aria-hidden='false'] {
-    visibility: visible;
-    opacity: 1;
-    transition: opacity .15s;
   }
 }

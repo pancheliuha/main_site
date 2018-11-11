@@ -20,6 +20,6 @@
     }
 </script>
 
-<style>
+<style lang="scss">
     @import "./content.scss";
 </style>

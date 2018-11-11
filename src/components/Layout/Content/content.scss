@@ -1,4 +1,15 @@
+@import "../../../assets/scss/mixins";
+
 .content {
   height: 828px;
   width: 100%;
+  @include desktop() {
+    height: 620px;
+  }
+  @include tablets() {
+    height: 800px;
+  }
+  @include phones() {
+    height: 560px;
+  }
 }

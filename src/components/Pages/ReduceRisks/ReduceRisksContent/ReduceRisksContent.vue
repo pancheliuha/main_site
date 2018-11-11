@@ -19,7 +19,7 @@
                             </p>
                             <p class="content-description-text">
                                 •  вживайте більше овочів, фруктів, зернових, риби<br />
-                                •  зменшіть вживання солі, жирної їжі та цукру*
+                                •  зменшіть вживання солі, жирної їжі та цукру <ReduceRisksTooltip01 tooltip-id="risks_01"></ReduceRisksTooltip01>
                             </p>
                         </div>
                     </div>
@@ -44,7 +44,7 @@
                             </p>
                             <p class="content-description-text">
                                 для більшості оптимальний варіант — <br />
-                                25-40* хв. активності на день**
+                                25-40<ReduceRisksTooltip02 tooltip-id="risks_02"></ReduceRisksTooltip02> хв. активності на день<ReduceRisksTooltip03 tooltip-id="risks_03"></ReduceRisksTooltip03>
                             </p>
                         </div>
                     </div>
@@ -69,7 +69,7 @@
                             </p>
                             <p class="content-description-text">
                                 оптимальний рівень для більшості — <br />
-                                нижче за 7,0* ммоль/л**
+                                нижче за 7,0<ReduceRisksTooltip04 tooltip-id="risks_04"></ReduceRisksTooltip04> ммоль/л<ReduceRisksTooltip05 tooltip-id="risks_05"></ReduceRisksTooltip05>
                             </p>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                             </p>
                             <p class="content-description-text">
                                 оптимальна для більшості норма — <br />
-                                менше за 6,2* ммоль/л**
+                                менше за 6,2<ReduceRisksTooltip06 tooltip-id="risks_06"></ReduceRisksTooltip06> ммоль/л<ReduceRisksTooltip05 tooltip-id="risks_07"></ReduceRisksTooltip05>
                             </p>
                         </div>
                     </div>
@@ -118,7 +118,7 @@
                                 підтримуйте здорову вагу тіла
                             </p>
                             <p class="content-description-text">
-                                індекс маси тіла має бути нижчим за 25* для більшості**
+                                індекс маси тіла має бути нижчим за 25<ReduceRisksTooltip06 tooltip-id="risks_08"></ReduceRisksTooltip06> для більшості <ReduceRisksTooltip07 tooltip-id="risks_09"></ReduceRisksTooltip07>
                             </p>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
                                 слідкуйте за артеріальним тиском
                             </p>
                             <p class="content-description-text">
-                                намагайтеся тримати його у нормі* – 120/80 мм рт.ст.**
+                                намагайтеся тримати його у нормі<ReduceRisksTooltip08 tooltip-id="risks_10"></ReduceRisksTooltip08> – 120/80 мм рт.ст.<ReduceRisksTooltip01 tooltip-id="risks_11"></ReduceRisksTooltip01>
                             </p>
                         </div>
                     </div>
@@ -166,19 +166,28 @@
                                 позбудьтеся шкідливих звичок
                             </p>
                             <p class="content-description-text">
-                                паління та зловживання алкоголем*
+                                паління та зловживання алкоголем<ReduceRisksTooltip09 tooltip-id="risks_12"></ReduceRisksTooltip09>
                             </p>
                         </div>
                     </div>
                 </div>
             </transition>
         </div>
-
     </div>
 </template>
 
 <script>
     import NavButton from '../../../UI/NavButton/NavButton'
+    import ReduceRisksTooltip01 from './ReduceRisksTooltips/ReduceRisksTooltip01'
+    import ReduceRisksTooltip02 from './ReduceRisksTooltips/ReduceRisksTooltip02'
+    import ReduceRisksTooltip03 from './ReduceRisksTooltips/ReduceRisksTooltip03'
+    import ReduceRisksTooltip04 from './ReduceRisksTooltips/ReduceRisksTooltip04'
+    import ReduceRisksTooltip05 from './ReduceRisksTooltips/ReduceRisksTooltip05'
+    import ReduceRisksTooltip06 from './ReduceRisksTooltips/ReduceRisksTooltip06'
+    import ReduceRisksTooltip07 from './ReduceRisksTooltips/ReduceRisksTooltip07'
+    import ReduceRisksTooltip08 from './ReduceRisksTooltips/ReduceRisksTooltip08'
+    import ReduceRisksTooltip09 from './ReduceRisksTooltips/ReduceRisksTooltip09'
+
 
     export default {
         name: 'ReduceRisksContent',
@@ -188,7 +197,16 @@
             }
         },
         components: {
-            NavButton
+            NavButton,
+            ReduceRisksTooltip01,
+            ReduceRisksTooltip02,
+            ReduceRisksTooltip03,
+            ReduceRisksTooltip04,
+            ReduceRisksTooltip05,
+            ReduceRisksTooltip06,
+            ReduceRisksTooltip07,
+            ReduceRisksTooltip08,
+            ReduceRisksTooltip09,
         },
         methods: {
             goToStep(step) {

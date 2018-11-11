@@ -1,3 +1,6 @@
+@import "../../../assets/scss/mixins";
+
+
 .test-btn {
   display: flex;
   align-items: center;
@@ -14,6 +17,12 @@
   cursor: pointer;
   transition: all .2s;
   text-decoration: none;
+  @include desktop() {
+    height: 70px;
+  }
+  @include phones() {
+    padding: 0 10px;
+  }
   &.without-arrow {
     .test-btn__text {
       margin-right: 0;
@@ -28,6 +37,17 @@
     width: 207px;
     margin: 0 18px;
     height: 92px;
+    @include desktop() {
+      height: 70px;
+      min-width: 175px;
+      width: 175px;
+    }
+    @include phones() {
+      height: 70px;
+      min-width: 118px;
+      width: 135px;
+      margin: 0;
+    }
   }
 }
 
@@ -44,6 +64,14 @@
   letter-spacing: 2px;
   font-size: 25px;
   margin-right: 10px;
+  @include tablets() {
+    font-size: 21px;
+  }
+  @include phones() {
+    letter-spacing: 0px;
+    font-size: 21px;
+    margin-right: 2px;
+  }
 }
 
 .arrow-right {

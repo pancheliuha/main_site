@@ -1,3 +1,5 @@
+@import "../../../../assets/scss/mixins";
+
 .diseases-content {
   background-image: -moz-linear-gradient( -40deg, rgb(255,139,254) 0%, rgb(198,156,253) 43%, rgb(141,173,252) 100%);
   background-image: -webkit-linear-gradient( -40deg, rgb(255,139,254) 0%, rgb(198,156,253) 43%, rgb(141,173,252) 100%);
@@ -9,17 +11,39 @@
     left: 50%;
     top: 15%;
     transform: translate(-50%);
+    @include desktop() {
+      height: 330px;
+    }
+    @include phones() {
+      height: 250px;
+    }
+
+    img {
+      @include desktop() {
+        height: 100%;
+      }
+    }
   }
 
   .heart-part {
     position: absolute;
     left: 51%;
     top: 28%;
+    @include desktop() {
+      height: 90px;
+    }
+    @include phones() {
+      height: 60px;
+      top: 27%;
+    }
   }
 
   .step-1 {
     .content-description-text.big {
       margin-bottom: 20px;
+      @include desktop() {
+        margin-bottom: 5px;
+      }
     }
   }
 
@@ -27,11 +51,21 @@
     position: absolute;
     right: 50%;
     top: 13%;
+    @include desktop() {
+      height: 73px;
+    }
+    @include phones() {
+      height: 53px;
+      top: 14%;
+    }
   }
 
   .step-2 {
     .content-description-text-wrapper {
       transform: translateY(20%);
+      @include tablets() {
+        transform: translateY(0);
+      }
     }
   }
 
@@ -39,29 +73,90 @@
     position: absolute;
     left: 51.5%;
     top: 54%;
+    @include desktop() {
+      height: 90px;
+    }
+    @include tablets() {
+      top: 43%;
+    }
+    @include phones() {
+      height: 64px;
+      left: 52.5%;
+      top: 45%;
+    }
   }
 
   .revmocardite-part {
     position: absolute;
-    left: 20%;
+    left: calc(50% - 140px);
+    transform: translate(-50%);
     top: 28%;
+    @include desktop() {
+      height: 90px;
+      left: calc(50% - 103px);
+    }
+    @include tablets() {
+      top: 25%;
+    }
+    @include phones() {
+      height: 60px;
+      left: calc(50% - 66px);
+      top: 26%;
+    }
   }
 
   .break-heart-part {
     position: absolute;
     left: 50%;
     top: 28%;
+    @include desktop() {
+      height: 80px;
+    }
+    @include tablets() {
+      top: 25%;
+    }
+    @include phones() {
+      height: 54px;
+      top: 26%;
+      left: 51%;
+    }
   }
 
   .lungs-part {
     position: absolute;
-    left: 22.2%;
+    left: 50%;
+    transform: translate(-50%);
     top: 29%;
+    @include desktop() {
+      height: 208px;
+    }
+    @include tablets() {
+      top: 26%;
+    }
+    @include phones() {
+      top: 28%;
+      height: 139px;
+    }
   }
 
   .step-6 {
     .content-description {
       transform: translateY(27%);
+      @include desktop() {
+        transform: translateY(19%);
+      }
+    }
+
+    .content-description-text.big {
+      @include phones() {
+        font-size: 22px;
+      }
+    }
+
+    .content-description-text {
+      @include phones() {
+        font-size: 15px;
+      }
     }
   }
 

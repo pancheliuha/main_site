@@ -21,8 +21,8 @@
                                 ішемічна хвороба серця
                             </p>
                             <p class="content-description-text">
-                                хвороба кровоносних судин, що забезпечують <br />
-                                кров’ю серцевий м’яз (міокард)*
+                                хвороба кровоносних судин, що забезпечують <br class="hidden-xs" />
+                                кров’ю серцевий м’яз (міокард)<DiseasesTooltip tooltip-id="diseases_01"></DiseasesTooltip>
                             </p>
                         </div>
                     </div>
@@ -48,7 +48,7 @@
                             </p>
                             <p class="content-description-text">
                                 хвороба кровоносних судин, <br />
-                                що забезпечують кров'ю мозок*
+                                що забезпечують кров'ю мозок<DiseasesTooltip tooltip-id="diseases_02"></DiseasesTooltip>
                             </p>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                             </p>
                             <p class="content-description-text">
                                 хвороба кровоносних судин, <br />
-                                що забезпечують кров'ю кінцівки*
+                                що забезпечують кров'ю кінцівки<DiseasesTooltip tooltip-id="diseases_03"></DiseasesTooltip>
                             </p>
                         </div>
                     </div>
@@ -97,9 +97,9 @@
                                 ревмокардит
                             </p>
                             <p class="content-description-text">
-                                ураження серцевого м'яза і серцевих клапанів <br />
-                                в результаті ревматичної атаки, що викликається <br />
-                                бактеріями роду Streptococcus*
+                                ураження серцевого м'яза і серцевих клапанів <br class="hidden-xs" />
+                                в результаті ревматичної атаки, що викликається <br class="hidden-xs" />
+                                бактеріями роду Streptococcus<DiseasesTooltip tooltip-id="diseases_04"></DiseasesTooltip>
                             </p>
                         </div>
                     </div>
@@ -124,7 +124,7 @@
                             </p>
                             <p class="content-description-text">
                                 Деформація будови серця, яка присутня <br />
-                                у людини з народження*
+                                у людини з народження<DiseasesTooltip tooltip-id="diseases_05"></DiseasesTooltip>
                             </p>
                         </div>
                     </div>
@@ -145,13 +145,13 @@
                     <div class="content-description">
                         <div class="content-description-text-wrapper">
                             <p class="content-description-text big">
-                                тромбоз глибоких вен <br />
+                                тромбоз глибоких вен <br class="hidden-lg" />
                                 нижніх кінцівок і емболія легенів
                             </p>
                             <p class="content-description-text">
                                 утворення у венах ніг згустків крові,
                                 які можуть зміщуватися та рухатися до серця і легенів,
-                                частково або повністю перешкоджаючи руху крові*
+                                частково або повністю перешкоджаючи руху крові<DiseasesTooltip tooltip-id="diseases_06"></DiseasesTooltip>
                             </p>
                         </div>
                     </div>
@@ -164,6 +164,7 @@
 
 <script>
     import NavButton from '../../../UI/NavButton/NavButton'
+    import DiseasesTooltip from './DiseasesTooltips/DiseasesTooltip'
 
     export default {
         name: 'DiseasesContent',
@@ -173,7 +174,8 @@
             }
         },
         components: {
-            NavButton
+            NavButton,
+            DiseasesTooltip
         },
         methods: {
             goToStep(step) {

@@ -2,9 +2,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 
-import VTooltip from 'v-tooltip'
-
-Vue.use(VTooltip);
+import Tooltip from 'vue-directive-tooltip';
+Vue.use(Tooltip);
 
 Vue.config.productionTip = false
 
