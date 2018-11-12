@@ -109,9 +109,6 @@
             StartTooltip04,
         },
         methods: {
-          prevHandler() {
-              console.log('prev');
-          },
             goToStep(step) {
                 this.step = step;
                 this.$root.$emit('currentStep', this.step);
