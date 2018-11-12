@@ -16,7 +16,7 @@
                     <div class="content-description">
                         <div class="content-description-text-wrapper">
                             <p class="start-text text-with-arrow">
-                                Як часто ми говоримо:<br>
+                                Як часто ми говоримо:<br>
                                 «Не бери близько до серця!»
                             </p>
                             <p class="start-text">
