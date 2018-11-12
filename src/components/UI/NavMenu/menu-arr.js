@@ -1,4 +1,4 @@
-import { testForLovedOneUrl } from '../../../config.js'
+import { testForYourselfUrl } from '../../../config.js'
 
 export const menu = [
     {
@@ -38,7 +38,7 @@ export const menu = [
         id: 4,
         text: 'Для фахівців охорони здоров\'я',
         redirectLink: true,
-        redirectUrl: testForLovedOneUrl,
+        redirectUrl: testForYourselfUrl,
         activePaths: ['nothing'],
         subMenu: ''
     },
