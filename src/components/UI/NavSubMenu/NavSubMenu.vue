@@ -7,6 +7,7 @@
                     :class="{active: submenuItem.activeLink === $route.path}"
                     class="nav-sub-menu-item">
                 <router-link
+                        v-if="submenuItem.activeLink.length"
                         :to="submenuItem.activeLink"
                         @click.native="closeMobileMenu"
                         class="nav-sub-menu-link">
@@ -18,8 +19,14 @@
                             {{ submenuItem.subtext }}
                         </span>
                     </transition>
-
                 </router-link>
+                <a v-else
+                   :href="submenuItem.redirectLink"
+                   target="_blank"
+                   class="nav-sub-menu-link"
+                >
+                    <span>{{ submenuItem.text }}</span>
+                </a>
             </li>
         </ul>
     </div>
@@ -40,9 +47,6 @@
                 this.$root.$emit('toggle-menu', false)
                 this.$root.$emit('close-mobile-menu', false)
             }
-        },
-        mounted() {
-            console.log(this.$route.path);
         }
     }
 </script>

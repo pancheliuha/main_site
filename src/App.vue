@@ -21,6 +21,7 @@
       </main>
     </div>
     <AppFooter></AppFooter>
+    <Popup></Popup>
   </div>
 </template>
 
@@ -29,7 +30,8 @@
     import AppFooter from './components/Layout/Footer/Footer';
     import AppAside from './components/Layout/Aside/Aside';
     import AppContent from './components/Layout/Content/Content';
-    import NavMobileMenu from './components/UI/NavMobileMenu/NavMobileMenu'
+    import NavMobileMenu from './components/UI/NavMobileMenu/NavMobileMenu';
+    import Popup from './components/UI/Popup/Popup'
 
 export default {
   name: 'App',
@@ -38,7 +40,8 @@ export default {
         AppFooter,
         AppAside,
         AppContent,
-        NavMobileMenu
+        NavMobileMenu,
+        Popup
     }
 }
 </script>

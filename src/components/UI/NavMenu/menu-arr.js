@@ -1,5 +1,3 @@
-import { testForYourselfUrl } from '../../../config.js'
-
 export const menu = [
     {
         id: 0,
@@ -38,7 +36,7 @@ export const menu = [
         id: 4,
         text: 'Для фахівців охорони здоров\'я',
         redirectLink: true,
-        redirectUrl: testForYourselfUrl,
+        redirectUrl: 'https://www.pfizermed.com.ua/',
         activePaths: ['nothing'],
         subMenu: ''
     },

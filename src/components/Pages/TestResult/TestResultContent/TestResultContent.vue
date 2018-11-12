@@ -20,11 +20,11 @@
                             </p>
                             <p class="content-description-text" v-if="resultType === 'yourself'">
                                 Ви маєте <span>{{ testResultPoint }}</span> з <span>9</span>
-                                факторів ризику серцево-судинних захворювань<TestResultTooltip01 tooltip-id="test-res_01"></TestResultTooltip01>
+                                факторів ризику серцево-судинних захворювань<TestResultTooltip01 tooltip-id="test-res_01"></TestResultTooltip01>
                             </p>
                             <p class="content-description-text" v-if="resultType === 'loved-one'">
                                 Людина, про яку Ви турбуєтесь, має <span>{{ testResultPoint }}</span> з <span>9</span>
-                                факторів ризику серцево-судинних захворювань<TestResultTooltip01 tooltip-id="test-res_02"></TestResultTooltip01>
+                                факторів ризику серцево-судинних захворювань<TestResultTooltip01 tooltip-id="test-res_02"></TestResultTooltip01>
                             </p>
                         </div>
                     </div>

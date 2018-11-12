@@ -8,13 +8,20 @@ export const cardioVascularSubMenu = [
     {
         id: 'card_02',
         text: 'Види захворювань',
-        subtext: 'Найбільш поширені серцево-судинні захворювання',
+        subtext: 'Найбільш поширені серцево-судинні захворювання',
         activeLink: '/cardio-vascular/diseases',
     },
     {
         id: 'card_03',
         text: 'Факти проти міфів',
-        subtext: 'Обізнаний — значить озброєний. А ви зможете визначити, які з тверджень відповідають реальності,а які  є поширеними міфами? ',
+        subtext: 'Обізнаний — значить озброєний. А ви зможете визначити, які з тверджень відповідають реальності,а які  є поширеними міфами? ',
         activeLink: '/cardio-vascular/facts-vs-myths',
+    },
+    {
+        id: 'card_04',
+        text: 'Компанія Pfizer',
+        subtext: '',
+        activeLink: '',
+        redirectLink: 'https://www.pfizer.ua/uk'
     }
 ]

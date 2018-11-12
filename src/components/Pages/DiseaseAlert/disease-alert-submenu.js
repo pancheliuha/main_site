@@ -1,7 +1,7 @@
 export const diseaseAlertSubMenu = [
     {
         id: 'alert_01',
-        text: 'Перші ознаки серцевого нападу',
+        text: 'Перші ознаки серцевого нападу',
         subtext: '',
         activeLink: '/disease-alert/heart-attack',
     },
